@@ -35,7 +35,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['*','condominio-backend-production.up.railway.app', '192.168.0.11']
+ALLOWED_HOSTS = ['*','primerparcial-backend-production.up.railway.app', '192.168.0.4']
 
 
 # Application definition
@@ -190,14 +190,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://condominio-frontend-production.up.railway.app",
-    "https://condominio-backend-production.up.railway.app",
+    "https://primerparcial-frontend-production.up.railway.app",
+    "https://primerparcial-backend-production.up.railway.app",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://condominio-frontend-production.up.railway.app",
-    "https://condominio-backend-production.up.railway.app",
+    "https://primerparcial-frontend-production.up.railway.app",
+    "https://primerparcial-backend-production.up.railway.app",
 ]
 
 # Permitir que el navegador envíe cookies en peticiones cross-origin
